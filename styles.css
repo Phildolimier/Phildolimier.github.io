@@ -20,7 +20,7 @@ h2 {
   text-align: center;
   padding-bottom: 20px;
   padding-top: 35px;
-  color: #16a085;
+  color: #0063B1;
 }
 
 .row {
@@ -45,15 +45,15 @@ h2 {
 }
 
 a {
-  color: #16a085;
+  color: #0063B1;
 }
 
 a:hover {
-  color: #1abc9c;
+  color: #0078D7;
 }
 
 #myName {
-  color: #16a085;
+  color: #0063B1;
 }
 
 .dates {
@@ -62,6 +62,7 @@ a:hover {
 
 .footer {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .mr-3 {
@@ -72,4 +73,9 @@ a:hover {
 
 .list-unstyled {
   padding-top: 5px;
+}
+
+.connect-image {
+  margin: auto;
+  padding-left: 5px;
 }
