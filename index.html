@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>PhilSearch</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!--My CSS styles file-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Jquery file-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+    <!--Boostrap JS-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Javascript functions file -->
+    <script src="functions.js"></script>
+</head>
+
+
+<body>
+
+
+<div class="content-wrap">
+
+    <!-- Top Navigation Bar -->
+    <ul class="nav sticky-top justify-content-end navbar navbar-dark bg-dark">
+      <li class="nav-item">
+        <a class="nav-link active" id="homeLink" href="#">Home</a>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Experience">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Projects">Projects</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#Writing">Technical Writing</a>
+      </li>
+    </ul>
+
+
+    <!-- Jumbotron section (My general info, image, contact) -->
+    <div class="jumbotron jumbotron-fluid" id="Jumbo">
+      <div class="container">
+        <h1 class="display-3" id="myName">Philippe Dolimier</h1>
+        <div class="media">
+          <img class="mr-3" src="me.jpg" alt="Image of Me" style="width:170px;">
+          <div class="media-body">
+            <h5 class="mt-0">About Me</h5>
+            Welcome! I am a Junior Computer Science Major with a Business Data Analytics Minor at the University of Maryland.
+            <br>
+            This is my home page. You can look at my Internship and Work Experience, Past Projects, some Technical Writing Samples, as well as all my contact information.
+            <br>
+            <br>
+            A work in Progress, the site is continually being developed, but its aim is to detail my projects and their significance to me more heavily than I can on my Resume.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Below Jumbotron Seperator -->
+    <ul class="nav justify-content-end navbar navbar-dark bg-dark" id="bottomBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 mids">
+            <a href="#Experience"><img class="mr-3" src="experience.png" alt="Experience" style="width:230px;"></a>
+          </div>
+          <div class="col-4 mids">
+            <a href="#Projects"><img class="mr-3" src="project.png" alt="Projects" style="width:230px;"></a>
+          </div>
+          <div class="col-4 mids">
+            <a href="#Writing"><img class="mr-3" src="writing.png" alt="Writing" style="width:230px;"></a>
+          </div>
+        </div>
+    </ul>
+
+    <h2 id ="Experience">Experience</h2>
+
+    <div class="home-content">
+
+      <ul class="list-unstyled">
+        <li class="media">
+          <img class="mr-3" src="ng.png" alt="Northrop Image">
+          <div class="media-body">
+            <h4 class="mt-0 mb-1">Northrop Grumman Technical Intern</h4>
+            <span class="dates">June '17 - August '17</span>
+            <p>Full Stack Web Development - Creating web work-flow processes for management to streamline their redeployment and training processes.
+            <br>Created client-side in basic HTML, CSS, and Javascript. Used Ajax Requests and Server-side PHP to store data in a JSON format.
+            </p>
+          </div>
+        </li>
+        <li class="media my-3">
+          <img class="mr-3" src="habitat.png" alt="Habitat Image">
+          <div class="media-body">
+            <h4 class="mt-0 mb-1">Engineering ASB Trip Coordinator</h4>
+            <span class="dates">Spring '17, Spring '18</span>
+            <p> University of Maryland's Engineering Departments Habitat for Humanity trip coordinator, performing community service, building homes for the underprivileged in Pinehurst, North Carolina.
+            </p>
+          </div>
+        </li>
+        <li class="media">
+          <img class="mr-3" src="exybox.png" alt="Exybox">
+          <div class="media-body">
+            <h4 class="mt-0 mb-1">Energy Efficient Technologies Intern</h4>
+            <span class="dates">October '14 - January '15</span>
+            <p>Created excel spreadsheets and graphs to find discrepancies in energy use
+            <br>Built energy models and marketing tactics for a HVAC systems monitoring product called 'exybox'
+            <br>Learned to code in Python and HighCharts to showcase data for HVAC efficiency
+            </p>
+            </div>
+        </li>
+        <li class="media">
+          <img class="mr-3" src="romilos.png" alt="Romilos">
+          <div class="media-body">
+            <h4 class="mt-0 mb-1">Romilos Restaurant</h4>
+            <span class="dates"> June ‘13 – August ‘16</span>
+            <p>
+              My first real job experience. I began as a Host and Busboy, then became a Food Server and worked in Food Preparation.
+	            <br>I eventually helped to create and implement weekly staff work schedules.
+              Working here throughout high school 3-4 days a week, I developed a strong work ethic.
+            </p>
+          </div>
+        </li>
+      </ul>
+  </div>
+
+
+<h2 id ="Projects">Projects</h2>
+
+<div class="home-content row project">
+  <div class="col-lg-4">
+    <img class="mr-3 circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image">
+    <div class="media-body">
+      <h4 class="mt-0 mb-1">smallC Compiler</h4>
+      <span class="dates">Fall '17</span>
+      <p>My first full project experience with Functional Programming, I used Ocaml to create the lexer, Parser, and Interpreter for a C-like language that supports basic expressions and statements.</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <img class="mr-3 circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image">
+    <div class="media-body">
+      <h4 class="mt-0 mb-1">Shell Scripting</h4>
+      <span class="dates">Spring '17</span>
+      <p>Wrote the basics of a shell(CLI) that supported boolean operations, pipes, and file redirection in C. </p>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <img class="mr-3 circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image">
+    <div class="media-body">
+      <h4 class="mt-0 mb-1">Lost in Space</h4>
+      <span class="dates">Summer '17</span>
+      <p>This was my first experience with game development. I began this project exploring GML and game engines, but ultimately decided I would learn more using Javascript.
+      <br>Try it out using icon to play <i>Lost in Space:</i> an addictive game of survival.</p>
+      <button type="button" class="btn btn-default">View details »</button>
+    </div>
+  </div>
+
+  <div class="col-lg-12">
+    <img class="mr-3 circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image">
+    <div class="media-body">
+      <h4 class="mt-0 mb-1">freshDressed</h4>
+      <span class="dates">December '16 - January '17</span>
+      <p>This project is meaningful to me since it is my first solo project with no direction, where I took a problem I had and worked to make it from scratch, researching heavily along the way.
+      I Founded and Coded 'freshDressed', which is an interactive weather application portal.
+      It Uses back end software to extract weather data from weather sites, computes an optimal outfit for any day in any national zipCode taking into account the entire days temperatures, humidity, chances of precipitation and wind, implemented in Java.
+      It is then viewed via the web on an interactive, aesthetically pleasing platform written in HTML, CSS, and JavaScript.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+<h2 id ="Writing">Technical Writing</h2>
+
+  <div class="home-content">
+  <ul class="list-unstyled">
+    <li class="media my-3">
+      <img class="mr-3" src="pdf.png" alt="Generic placeholder image">
+      <div class="media-body">
+        <h4 class="mt-0 mb-1">Writing Sample 1</h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      </div>
+    </li>
+    <li class="media my-3">
+      <a href="MVAVF.pdf"><img class="mr-3" src="pdf.png" alt="Generic placeholder image"></a>
+      <div class="media-body">
+        <h4 class="mt-0 mb-1">Department of Motor Vehicles Efficiency Research Project</h4>
+        <span class="dates">September '17 - December '17</span>
+        <p>This final Paper is the culmination of a semester long research project on the Maryland DMV (MVA). I chose to conquer a widely accepted issue, the inefficiencies that lie in the DMV. I set a costrain on myself
+          that I would complete this hypothetical project under the strict budget that the sector has. Click on the image to the left to view my Final Paper.
+        </p>
+      </div>
+    </li>
+    <li class="media my-3">
+      <a href="Contemp_Liv_Leg.pdf"><img class="mr-3" src="pdf.png" alt="Generic placeholder image"></a>
+      <div class="media-body">
+        <h4 class="mt-0 mb-1">Contemporary Living-Dead Legends Research Project</h4>
+        What I beleive to be one of most eloquently written and eluciditive essays, this project outlines the research conducted in a course at the University of Maryland about societies' fears and how they affect our culture. This being how a societies stories and legends about the living dead
+        stem specifically from their respective practices with their dead, theories about the afterlife, and the common fears of their societies’,
+        as the current events of a time lead to the myths and stories embedded in that specific culture. </div>
+    </li>
+  </ul>
+  </div>
+
+
+  <div class="footer">
+    <h2>Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-1/2">
+        <a href="https://linkedin.com/in/philippe-dolimier-87b432b2" target="_blank" class="connect-image"><img class="mr-3" src="linkedin.png" alt="LinkedIn" style="width:50px;"></a>
+      </div>
+      <div class="col-1/2">
+        <a href="https://github.com/Phildolimier" target="_blank" class="connect-image"><img class="mr-3" src="github.png" alt="Github" style="width:50px;"></a>
+      </div>
+      <div class="col-1/2">
+        <a href="mailto:phildolimier@gmail.com" class="connect-image"><img class="mr-3" src="email.png" alt="Email" style="width:50px;"></a>
+      </div>
+      <div class="col-1/2">
+        <a href="https://www.facebook.com/phil.dolimier.3" target="_blank" class="connect-image"><img class="mr-3" src="fb.png" alt="Facebook logo" style="width:50px;"></a>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

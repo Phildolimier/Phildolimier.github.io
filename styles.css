@@ -83,3 +83,14 @@ a:hover {
 .circle {
   border-radius: 50px;
 }
+
+.btn {
+  color: #333;
+  background-color: white;
+  border-color: #8c8c8c;
+
+}
+
+.btn:hover {
+  background-color: #d4d4d4;
+}
