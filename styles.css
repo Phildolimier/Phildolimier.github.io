@@ -14,7 +14,26 @@ body {
 
 }
 
+/*NAV styles*/
+.nav {
+  height: 50px;
+}
+.nav-item{
+  font-weight: 400;
+  text-align: center;
+  height: inherit;
+  padding: 0;
+  overflow: hidden;
+}
 
+.nav-link {
+  padding-top: 12px;
+}
+.nav-item:hover {
+    background-color: black;
+}
+
+/*page styles*/
 h2 {
   margin: auto;
   text-align: center;
