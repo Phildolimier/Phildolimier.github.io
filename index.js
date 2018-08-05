@@ -38,10 +38,9 @@ app.use('/projects', express.static('projects'));
     // Create new visitor
     var city,state_region,state_region_code,zip,country,country_code,lat,lng;
 
-    console.log("traffic from " + req.ip);
     console.log("The current time is " + Date.now());
 
-    where.is('134.201.250.155', function(err, result) {
+    where.is(req.ip, function(err, result) {
       if (result) {
         city =  result.get('city');
         state_region = result.get('region');
@@ -64,7 +63,7 @@ app.use('/projects', express.static('projects'));
         CountryCode: country_code,
         Lat: lat,
         Lng: lng,
-        date: Date.now() - 14400000 //eastern standard time
+        date: Date.now() //- 14400000 //eastern standard time
     });
 
     // Save visitor to database

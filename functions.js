@@ -21,3 +21,10 @@ function show(id) {
 
     id.style.visibility = "visible";
 }
+
+$(".media").hover(
+    function () {
+        alert("h");
+         $(".writing").attr("src","images/pdfBlue.png");
+    }
+);
