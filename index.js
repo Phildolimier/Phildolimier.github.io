@@ -69,7 +69,7 @@ app.use('/projects', express.static('projects'));
     // Save visitor to database
     visitor.save(function(err) {
         if (err) throw err;
-        return res.render('main');
+        return res.render('mains');
     });
 });
 
