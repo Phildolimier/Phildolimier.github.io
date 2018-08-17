@@ -260,6 +260,35 @@ ggplot() +
 </div>
 <div id="correlation-test" class="section level2">
 <h2>Correlation Test</h2>
+<pre class="r"><code> ##Linear Regression
+metric1 = lm(Year ~ avg_prop, data = top100_prop_avgtop100_prop_unique_words)
+
+summary(metric1)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = Year ~ avg_prop, data = top100_prop_avgtop100_prop_unique_words)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -15.5359  -3.2188  -0.3057   4.3298  12.1235 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 2139.6472     0.9547    2241   &lt;2e-16 ***
+## avg_prop    -404.7903     2.5786    -157   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 5.954 on 4829 degrees of freedom
+## Multiple R-squared:  0.8361, Adjusted R-squared:  0.8361 
+## F-statistic: 2.464e+04 on 1 and 4829 DF,  p-value: &lt; 2.2e-16</code></pre>
+<p>We ran a linear regression with our independant variable as Year, to measure whether there is a significant relationship versus ‘Year’ and our proposed response varaible, ‘average proportion of unique words per song over total word count per year’, which we call the ‘average repetition metric’.</p>
+<p>I will run a two-tailed t-test, whether there is a significant relationship between the two variables.</p>
+<p>Null Hypothesis: There is no significant relationship between Year and our Average Repetition Metric. Alternative Hypothesis: There is a significant relationship between Year and our Average Repetition Metric.</p>
+<p>We see since our p-value is essentially 0 (&lt; 2.2e-16), we can reject our null hypothesis. We can say there is a significant relationship between Year and Year and our Average Repetition Metric. We have an R-squared value of .8361 which is very high.</p>
+</div>
+<div id="weaknesses" class="section level2">
+<h2>Weaknesses</h2>
 <p>We allow ourselves to see that there is a significant correlation between Year and Proportion of unique words per song. There is a very obvious inverse relationship between Year and Percentage of Unique Words Used. This is to say, as time increases the top 100 Billboard songs of the year tended to use less unique words per song.</p>
 <p>Although this metric can be potentially useful, let’s explore Groove Armada’s 1997 hit, ‘At The River’, to see where its fault lies-</p>
 <p>“If you’re fond of sand dunes and salty air, Quaint little villages here and there.</p>
