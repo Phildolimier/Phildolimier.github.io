@@ -15,17 +15,19 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-    
+
     .nav-item {
       font-size: 13px;
+      display: none;
+    }
+
+    .nav-btn {
+      display: inline;
     }
 
     .nav-img {
       visibility: hidden;
-    }
 
-    .nav-link {
-      float: left;
     }
 }
 
@@ -33,6 +35,16 @@ body {
 .nav {
   height: 50px;
 }
+
+.nav-btn {
+  display:  none;
+  font-weight: 400;
+  text-align: center;
+  height: inherit;
+  padding: 0;
+  overflow: hidden;
+}
+
 .nav-item{
   font-weight: 400;
   text-align: center;
