@@ -7,4 +7,4 @@ It includes my past experience, projects, writing samples, and external contact 
 
 My CMSC320 final data science project: "The Name Fad Mystique" is linked to on this page
 
-Site: http://philippe-dolimier.me
+Site: https://philippe-dolimier.me
